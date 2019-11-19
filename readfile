@@ -1,0 +1,61 @@
+import java.util.Scanner;
+import java.lang.Exception;
+import java.io.*;
+
+public class FileReading {
+
+	// Task 1 
+	public String readName1(String filename) throws IOException {
+		//String filename;
+		//Scanner scan = new Scanner(System.in);
+		
+		//System.out.print("Enter filename:");
+		//filename = scan.nextLine();
+		//scan.close();
+				
+		try {		
+			File file = new File(filename);
+			Scanner scan = new Scanner(file);
+		
+			String name = scan.nextLine() + " " + scan.nextLine();
+			scan.close();
+			
+			return name;
+		} catch(Exception e) {
+			throw new IOException(e.getMessage());
+		}
+	}
+	
+	
+	/*Task 2 
+	public ?? readName2(??)  {
+		??
+	}
+	*/
+	
+	/*Task 3 
+	public ?? readNames(??)  {
+		??
+	}
+	*/
+	
+	/*Task 4 
+	public ?? readNumbers1(??){
+		??
+	}
+	*/
+	
+	/*Task5 
+	public ?? readNumbers2(??)  {
+		??
+	}
+	*/
+	
+	/*Task 6 
+	public ?? readAddressBook(??)  {
+		??
+	}
+	*/
+	
+
+}
