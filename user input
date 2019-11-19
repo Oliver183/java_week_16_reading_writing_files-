@@ -35,10 +35,45 @@ public class UserInput {
 	}
 	 
 	
-	/* Task 4 
-	public ?? cinemaViewing() {
-		??
+	// Task 4
+	public String cinemaViewing() {
+		System.out.print("Enter your age: ");
+		Scanner scan = new Scanner(System.in);
+		int age;
+		age = scan.nextInt(); 
+		
+		String invalid = "Invalid age";
+		String underFour = "Too young for a film";
+		String underEight = "U - suitable for four years and over";
+		String underTwelve = underEight+"\nPG - suitable for eight years and over";
+		String underFifteen = underTwelve+"\n12 - suitable for twelve years and over";
+		String underEighteen = underFifteen+"\n15 - suitable for fifteen years and over";
+		String overEighteen = underEighteen+"\n18 - suitable for adults only";
+
+		if (age < 4 && age > 0){ 
+		return underFour ;
 	}
-	 */
+		else if (age < 8)  {
+			return underEight;
+		}
+		else if (age < 12)  {
+			return underTwelve;
+		}
+		else if (age < 15)  {
+			return underFifteen;
+		}
+		else if (age < 18)  {
+			return overEighteen;
+		}
+		else if (age > 18 && age< 120)  {
+			return overEighteen;
+		}
+			else {
+			return invalid; 
+		}
+		
+		}
+		
+	 
 }
 
