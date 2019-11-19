@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class UserInput {
+	// Task 1 
+	public String sayHello() {
+		Scanner scan = new Scanner(System.in);
+		String name;
+		System.out.print("Enter your name:");
+		name = scan.nextLine();
+		return"Hello "+ name;
+	}
+	 
+	
+	// Task 2 
+	public int[] readTenNumbers() {
+		int[] nums = new int[10];
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter ten numbers:");
+		for(int i=0;i < 10;i++) {
+			nums[i] = scan.nextInt();
+		}
+		return(nums);
+	}
+	 
+	
+	// Task 3 
+	public String[] readTenNames() {
+		String[] names = new String[10];
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter ten names:");
+		for(int i=0;i < 10;i++) {
+			names[i] = scan.nextLine();
+		}
+		return(names);
+	}
+	 
+	
+	/* Task 4 
+	public ?? cinemaViewing() {
+		??
+	}
+	 */
+}
+
